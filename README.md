@@ -1,4 +1,4 @@
-# Second-Order XSS detector
+# Second order XSS detector
 
 This project is designed to detect second-order XSS vulnerabilities. Burp Suite is used to inject XSS payloads, and for each request, Selenium opens a specific page to check if the payload triggers an HTTP call to the Burp Collaborator.
 
