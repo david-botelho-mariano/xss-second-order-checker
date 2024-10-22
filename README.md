@@ -10,20 +10,25 @@ This project is designed to detect second-order XSS vulnerabilities. Burp Suite 
 
 ## Installation and configuration of `xss-second-order-detector-server.py`
 
+1. Clone the repository:
 ```bash
 git clone https://github.com/david-botelho-mariano/xss-second-order-detector
 ```
 
+2. Navigate into the project directory:
 ```bash
 cd xss-second-order-detector
 ```
 
+3. Install the required dependencies:
 ```bash
 pip install Flask selenium webdriver-manager
 ```
 
+4. Update the target URL:
 The url variable of `xss-second-order-detector-server.py` file should be updated to the page where the user wants to monitor for XSS execution. Change the line to the appropriate target URL that will reflect the response or data where the XSS payload might execute. This page is where Selenium will check if the injected XSS payload triggers a callback or action.
 
+5. Run the Flask server:
 ```bash
 python xss-second-order-detector-server.py
 ```
