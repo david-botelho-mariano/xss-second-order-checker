@@ -11,10 +11,17 @@ This project is designed to detect second-order XSS vulnerabilities. Burp Suite 
 ## Installation
 
 ```bash
-git clone https://github.com/david-botelho-mariano/xss-second-order-checker/
-cd your-repo
-pip install Flask selenium webdriver-manager
-python xss-second-order-detector-server.py
+git clone https://github.com/david-botelho-mariano/xss-second-order-detector/
 ```
 
+```bash
+cd xss-second-order-detector
+```
 
+```bash
+pip install Flask selenium webdriver-manager
+```
+
+```bash
+python xss-second-order-detector-server.py
+```
