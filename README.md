@@ -8,7 +8,7 @@ This project is designed to detect second-order XSS vulnerabilities. Burp Suite 
 3. XSS Detection: The Selenium browser observes whether the payload triggers an action on the target page (e.g., an HTTP call to Burp Collaborator).
 4. Burp Collaborator: If the payload triggers an HTTP call, it is captured by the Burp Collaborator, confirming that the XSS vulnerability exists.
 
-## Installation
+## Installation and configuration of "xss-second-order-detector-server.py"
 
 ```bash
 git clone https://github.com/david-botelho-mariano/xss-second-order-detector
@@ -27,3 +27,11 @@ The url variable of `xss-second-order-detector-server.py` file should be updated
 ```bash
 python xss-second-order-detector-server.py
 ```
+
+## Installation and configuration of `xss-second-order-detector-client.py`
+
+1. Open Burp Suite and go to the Extender tab.
+2. In the Extender tab, go to the Extensions sub-tab
+3. Click Add.
+4. In the Extension Details window, select Extension Type as Python.
+5. For Extension File, browse and select the `xss-second-order-detector-client.py` file from this repository.
