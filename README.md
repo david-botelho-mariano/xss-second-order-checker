@@ -22,7 +22,7 @@ cd xss-second-order-detector
 pip install Flask selenium webdriver-manager
 ```
 
-The url in the open_specific_page function of `xss-second-order-detector-server.py` file should be updated to the page where the user wants to monitor for XSS execution. Change the line to the appropriate target URL that will reflect the response or data where the XSS payload might execute. This page is where Selenium will check if the injected XSS payload triggers a callback or action.
+The url variable of `xss-second-order-detector-server.py` file should be updated to the page where the user wants to monitor for XSS execution. Change the line to the appropriate target URL that will reflect the response or data where the XSS payload might execute. This page is where Selenium will check if the injected XSS payload triggers a callback or action.
 
 ```bash
 python xss-second-order-detector-server.py
