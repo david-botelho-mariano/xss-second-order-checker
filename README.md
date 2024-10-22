@@ -11,7 +11,7 @@ This project is designed to detect second-order XSS vulnerabilities. Burp Suite 
 ## Installation
 
 ```bash
-git clone https://github.com/david-botelho-mariano/xss-second-order-detector/
+git clone https://github.com/david-botelho-mariano/xss-second-order-detector
 ```
 
 ```bash
