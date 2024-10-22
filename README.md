@@ -1,4 +1,4 @@
-# Second order XSS detector
+# Second-order XSS detector
 
 This project is designed to detect second-order XSS vulnerabilities. Burp Suite is used to inject XSS payloads, and for each request, Selenium opens a specific page to check if the payload triggers an HTTP call to the Burp Collaborator.
 
@@ -22,7 +22,7 @@ cd xss-second-order-detector
 pip install Flask selenium webdriver-manager
 ```
 
-The url in the open_specific_page function of `xss-second-order-detector-server.py` should be updated to the page where the user wants to monitor for XSS execution. Change the line to the appropriate target URL that will reflect the response or data where the XSS payload might execute. This page is where Selenium will check if the injected XSS payload triggers a callback or action.
+The url in the open_specific_page function of `xss-second-order-detector-server.py` file should be updated to the page where the user wants to monitor for XSS execution. Change the line to the appropriate target URL that will reflect the response or data where the XSS payload might execute. This page is where Selenium will check if the injected XSS payload triggers a callback or action.
 
 ```bash
 python xss-second-order-detector-server.py
